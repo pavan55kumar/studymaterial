@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADLD UNITS</title>
+  <style>
+    :root {
+      --primary-color: rgba(0, 86, 179, 0.8);
+      --secondary-color: rgba(84, 76, 76, 0.8);
+      --text-color: #ffffff;
+      --background-color: #212121;
+      --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: url('adld.jpg') center/cover fixed;
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: var(--text-shadow);
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color:transparent;
+      background-color: rgb(102, 102, 97);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .unit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--text-color);
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.5s ease;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .unit:hover {
+      background-color: var(--primary-color);
+      transform: scale(1.1);
+      border-radius: 50px;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ADLD UNITS</h1>
+  </header>
+  <main>
+    <a href="unit1.html" class="unit">Unit 1</a>
+    <a href="unit2.html" class="unit">Unit 2</a>
+    <a href="unit3.html" class="unit">Unit 3</a>
+  </main>
+  <footer>
+    &copy; 2025 adld UNITS. All rights reserved.
+  </footer>
+</body>
+</html>
